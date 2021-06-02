@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UmActivity"
+    android:background="@color/cinza">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"><!--início linear principal-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@color/roxo"
+            android:gravity="center"
+            android:orientation="horizontal"><!--Linear header -->
+
+            <ImageView
+                android:id="@+id/imgVoltar"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:src="@drawable/ic_back"
+                android:layout_marginLeft="24dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Quem sou eu?"
+                android:textAlignment="center"
+                android:textSize="24sp"
+                android:textColor="@color/amarelo"
+                android:fontFamily="@font/nunito_bold"
+                android:layout_marginRight="24dp"/>
+
+        </LinearLayout><!-- \fim linear header -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:src="@drawable/sorrindo"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Aqui você coloca sua bio..."
+                    android:fontFamily="@font/nunito_bold"
+                    android:textAlignment="center"
+                    android:textSize="24sp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginRight="24dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Empreendedor, Médico Veterinário e futuro Analista e Desenvolvedor de Sistemas."
+                    android:fontFamily="@font/nunito_bold"
+                    android:textAlignment="center"
+                    android:textSize="18sp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginRight="24dp"/>
+
+            </LinearLayout>
+
+    </LinearLayout><!-- Fim linear principal-->
+</ScrollView>

@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/cinza">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/back_custom"
+                android:layout_marginBottom="16dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:src="@drawable/sorrindo"
+                    android:layout_marginTop="16dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Bruno Bordin"
+                    android:textSize="24dp"
+                    android:textAlignment="center"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/nunito_semi"
+                    android:textColor="@color/branco"/>
+
+            </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cardUm"
+                        android:layout_width="300dp"
+                        android:layout_height="100dp"
+                        android:layout_gravity="center"
+                        app:cardCornerRadius="5dp"
+                        android:backgroundTint="@color/roxo"
+                        android:onClick="quemsou">
+                        <ImageView
+                            android:alpha="0.3"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/foto"
+                            android:scaleType="centerCrop"
+                            android:paddingTop="200dp"
+                            android:onClick="quemsou"
+                            />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="Quem sou eu?"
+                            android:fontFamily="@font/nunito_light"
+                            android:drawableRight="@drawable/ic_people"
+                            android:drawableTint="@color/amarelo"
+                            android:textColor="@color/amarelo"
+                            android:textSize="20dp"
+                            android:padding="16dp"
+                            android:gravity="center"
+                            android:onClick="quemsou"/>
+
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="8dp">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardDois"
+                android:layout_width="300dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                app:cardCornerRadius="5dp"
+                android:backgroundTint="@color/roxo">
+
+                <ImageView
+                    android:alpha="0.3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/foto"
+                    android:scaleType="centerCrop"
+                    android:paddingBottom="5dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="O que gosto de fazer"
+                    android:fontFamily="@font/nunito_light"
+                    android:drawableRight="@drawable/ic_people"
+                    android:drawableTint="@color/amarelo"
+                    android:textColor="@color/amarelo"
+                    android:textSize="20dp"
+                    android:padding="16dp"
+                    android:gravity="center"/>
+
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="16dp">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardTres"
+                android:layout_width="300dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                app:cardCornerRadius="5dp"
+                android:backgroundTint="@color/roxo"
+               >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Trabalho"
+                    android:fontFamily="@font/nunito_light"
+                    android:textColor="@color/amarelo"
+                    android:textSize="20dp"
+                    android:padding="16dp"
+                    android:gravity="center"/>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="16dp">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardQuatro"
+                android:layout_width="300dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                app:cardCornerRadius="5dp"
+                android:backgroundTint="@color/roxo">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/foto"
+                    android:layout_gravity="right"/>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Contato"
+                    android:fontFamily="@font/nunito_light"
+                    android:textColor="@color/amarelo"
+                    android:textSize="20dp"
+                    android:gravity="center"
+                    android:paddingLeft="-50dp"
+                    />
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</ScrollView>
